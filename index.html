@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BuscaCep - Busque seu CEP com agilidade</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+      <main id="container">
+
+        <div id="info-superior">
+          <h2 id="titulo"><span class="titulo">Busca</span>CEP</h2>
+          <p class="subtitulo">Busque seu CEP com agilidade!</p>
+          <img src="lupa.png" alt="Imagem lupa">
+          <p>Digite no formato de 8 números</p>
+          <span>EX: 01001000</span>
+        </div>
+
+        <div id="geral">
+          <input type="text" placeholder="CEP" id="CEP" onblur="buscarCep(this.value)">
+          <input type="text" placeholder="Endereço" id="endereco" readonly>
+          <input type="text" placeholder="Bairro" id="bairro" readonly>
+          <input type="text" placeholder="cidade" id="cidade" readonly>
+          <input type="text" placeholder="UF" id="uf" readonly>
+        </div>
+
+      </main>
+
+      <script src="index.js"></script>
+    </body>
+</html>
